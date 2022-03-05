@@ -7,6 +7,9 @@
 #### 3. Nightmare mode
 *6 cards, 5 seconds time limit.
 
+#### Demo Gif
+![](demo.gif)
+
 ## Important
 1. git clone this repository.
 2. Run your terminal.
