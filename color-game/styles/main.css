@@ -1,0 +1,192 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+	line-height: 1.5;
+}
+
+body {
+    background-color: #232323;
+    margin: 0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	transition: background 0.6s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
+}
+
+.blink {
+    background-color: #232323;
+    margin: 0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	transition: background 0.6s;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
+    animation: blinkingBackground 1s ease-in-out infinite;
+}
+
+@keyframes blinkingBackground {
+    0% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.time {
+    color: white;
+    font-weight: bold;
+	font-size: 120%;
+}
+
+#stripe {
+	background: white;
+	padding: 1rem;
+	color: #484848;
+}
+
+#navbar {
+	display: -webkit-flex;
+    display: flex;
+	flex-direction: row;
+}
+
+#brand {
+	font-weight: bold;
+	padding: 0 1rem;
+}
+
+#about {
+	margin-left: auto;
+	color: #bbb;
+}
+
+#easy-mode {
+    color: black;
+    margin-left: 1rem;
+    font-weight: bold;
+	cursor: pointer;
+}
+
+#easy-mode:hover {
+    color: steelblue;
+    font-weight: bold;
+	cursor: pointer;
+}
+
+#hard-mode {
+    color: black;
+    margin-left: 1rem;
+    font-weight: bold;
+	cursor: pointer;
+}
+
+#hard-mode:hover {
+    color: steelblue;
+    font-weight: bold;
+	cursor: pointer;
+}
+
+#nightmare-mode {
+    color: black;
+    margin-left: 1rem;
+    font-weight: bold;
+	cursor: pointer;
+}
+
+#nightmare-mode:hover {
+    color: steelblue;
+    font-weight: bold;
+	cursor: pointer;
+}
+
+.selected#easy-mode {
+    color:white;
+}
+.selected#hard-mode {
+    color:white;
+}
+.selected#nightmare-mode {
+    color:white;
+}
+
+.selected {
+    color: white;
+    background: steelblue;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+}
+
+.container {
+    margin-left: auto;
+	margin-right: auto;
+    max-width: 520px;
+}
+
+#card-container::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#color-picked {
+    font-weight: bold;
+	font-size: 120%;
+}
+
+@media (min-width: 576px) {
+	#color-picked {
+	    font-size: 200%;
+	}
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    text-transform: uppercase;
+	margin: 0;
+    padding: 20px 0;
+}
+
+.card {
+    width: 30%;
+    background: white;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+	border-radius: 1rem;
+    transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+	cursor: pointer;
+}
+
+button {
+	display: block;
+	margin: 3rem auto;
+	padding: 1rem;
+	outline: none;
+	border: none;
+    border-radius: 999rem;
+    background-color: white;
+	font-size: 1rem;
+    font-weight: 700;
+    color: #484848;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+	cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    background-color: steelblue;
+}
