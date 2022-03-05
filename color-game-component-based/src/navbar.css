@@ -1,0 +1,77 @@
+.navbar {
+    background: white;
+    padding: 1rem;
+    color: #484848;
+}
+
+.navbar .flex {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .brand {
+    font-weight: bold;
+    padding: 0 1rem;
+}
+
+.navbar .about {
+    margin-left: auto;
+    color: #bbb;
+}
+
+.navbar .selected {
+    color: white;
+    background: steelblue;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar .selected:hover {
+    color: white;
+    background: steelblue;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar .flex:not(.selected) {
+    color: black;
+    background: white;
+    cursor: pointer;
+}
+
+.navbar #easyMode:not(.selected):hover {
+    color: steelblue;
+	cursor: pointer;
+}
+
+.navbar #hardMode:not(.selected):hover {
+    color: steelblue;
+	cursor: pointer;
+}
+
+.navbar #nightmareMode:not(.selected):hover {
+    color: steelblue;
+	cursor: pointer;
+}
+
+.navbar #easyMode:hover {
+    color: white;
+	cursor: pointer;
+}
+
+.navbar #hardMode:hover {
+    color: white;
+	cursor: pointer;
+}
+
+.navbar #nightmareMode:hover {
+    color: white;
+	cursor: pointer;
+}
